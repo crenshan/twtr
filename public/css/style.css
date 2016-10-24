@@ -1,0 +1,139 @@
+/* font-family: 'Titan One', helvetica, sans-serif;    */
+/* font-family: 'Open Sans', helvetica, sans-serif; */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', helvetica, sans-serif;
+    padding-top: 90px;
+}
+
+.twtr-innerContent {
+    min-width: 380px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#twtr-head {
+    background: #212650;
+    background: -moz-linear-gradient(top, #212650 0%, #323975 100%);
+    background: -webkit-linear-gradient(top, #212650 0%, #323975 100%);
+    background: -ms-linear-gradient(top, #212650 0%, #323975 100%);
+    background: linear-gradient(to bottom, #212650 0%, #323975 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#twtr-head:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+#twtr-head:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+}
+
+#twtr-logo {
+    color: #fff;
+    font: 44px/60px 'Titan One', helvetica, sans-serif;
+    letter-spacing: 6px;
+    padding-left: 80px;
+    background: url('../img/tweet-bird.png') left center no-repeat;
+    float: left;
+}
+
+#twtr-mention {
+    color: #bac1ff;
+    font: 32px/60px 'Open Sans', helvetica, sans-serif;
+    letter-spacing: 6px;
+    margin-right: 20px;
+    float: right;
+}
+
+ul.twtr-tweets {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+
+li.twtr-tweet {
+    border: 1px solid #bac1ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 0 15px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+}
+
+a.twtr-img {
+    float: left;
+}
+
+a.twtr-img img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.twtr-userInfo {
+    margin: 0 0 5px 68px;
+}
+
+.twtr-user {
+    font-weight: 800;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #323975;
+    text-dcoration: none;
+}
+
+.twtr-user:focus,
+.twtr-user:hover {
+    text-decoration: underline;
+}
+
+.twtr-name {
+    color: #8388af;
+}
+
+.twtr-content {
+    margin-left: 68px;
+}
+
+.twtr-loader {
+    text-align: center;
+}
+
+.twtr-notification {
+    text-align: center;
+    font-size: 0.9em;
+    color: #8388af;
+}
+
+.twtr-notification a {
+    color: #8388af;
+}
